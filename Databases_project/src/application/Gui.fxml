@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="601.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <BorderPane layoutX="-194.0" layoutY="-197.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextField fx:id="text" layoutX="6.0" layoutY="14.0" prefHeight="25.0" prefWidth="751.0" promptText="enter your search and press appropriate Button" />
+      <Button layoutX="6.0" layoutY="50.0" mnemonicParsing="false" onAction="#EngineBTN" text="ENGINE" textAlignment="CENTER" textFill="#2809c3" />
+      <Button layoutX="84.0" layoutY="50.0" mnemonicParsing="false" onAction="#BatteryBTN" text="BATTERY" textAlignment="CENTER" textFill="#4212e1" />
+      <Button layoutX="603.0" layoutY="52.0" mnemonicParsing="false" onAction="#ShipBTN" prefHeight="25.0" prefWidth="58.0" text="SHIP" textAlignment="CENTER" textFill="#590ed0" />
+      <Button layoutX="676.0" layoutY="50.0" mnemonicParsing="false" onAction="#TorpedoBTN" text="TORPEDO" textAlignment="CENTER" textFill="#5916eb" />
+      <AnchorPane layoutX="2.0" layoutY="75.0" />
+      <AnchorPane layoutX="6.0" layoutY="77.0">
+         <children>
+            <ListView fx:id="listView" accessibleRole="TABLE_COLUMN" prefHeight="514.0" prefWidth="751.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ListView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="337.0" layoutY="50.0" mnemonicParsing="false" onAction="#ClearBTN" text="CLEAR" textFill="#561c83" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
